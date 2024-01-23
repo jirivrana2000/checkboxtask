@@ -1,0 +1,35 @@
+.chevron {
+    position: relative;
+    text-align: center;
+    height: 100%;
+    width: 100px;
+}
+
+.chevron:after,
+.chevron:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background: #002d39;
+}
+
+.chevron:before {
+    left: 0;
+    width: 51%;
+    -webkit-transform: skew(0deg, 6deg);
+    -moz-transform: skew(0deg, 6deg);
+    -ms-transform: skew(0deg, 6deg);
+    -o-transform: skew(0deg, 6deg);
+    transform: skew(0deg, 8deg);
+}
+  
+.chevron:after {
+    right: 0;
+    width: 50%;
+    -webkit-transform: skew(0deg, -6deg);
+    -moz-transform: skew(0deg, -6deg);
+    -ms-transform: skew(0deg, -6deg);
+    -o-transform: skew(0deg, -6deg);
+    transform: skew(0deg, -8deg);
+}
